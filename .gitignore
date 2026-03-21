@@ -52,3 +52,6 @@ frontend/.env.*
 
 # FastAPI
 *.pid
+
+# claude
+*CLAUDE.md
