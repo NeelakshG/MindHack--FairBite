@@ -1,5 +1,6 @@
 import os
 import sys
+import pandas as pd
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
@@ -30,8 +31,18 @@ def load_data():
     businesses = loader.load_businesses()
     reviews = loader.load_reviews(set(businesses["business_id"]))
 
-    reviews = reviews[reviews["stars"] != 3]
-    reviews["label"] = (reviews["stars"] >= 4).astype(int)
+    reviews["label"] = (reviews["stars"] - 1) / 4.0
+
+    star_groups = [reviews[reviews["stars"] == s] for s in reviews["stars"].unique()]
+    min_size = min(len(g) for g in star_groups)
+    print(f"Star distribution before balancing:")
+    for s in sorted(reviews["stars"].unique()):
+        print(f"  {int(s)} stars: {len(reviews[reviews['stars'] == s])}")
+
+    balanced = pd.concat([g.sample(n=min_size, random_state=42) for g in star_groups])
+    reviews = balanced.sample(frac=1, random_state=42).reset_index(drop=True)
+    print(f"After balancing: {min_size} per star rating, {len(reviews)} total")
+
     return reviews
 
 
@@ -61,7 +72,13 @@ def train():
     train_loader = DataLoader(TensorDataset(X_train, y_train), batch_size=BATCH_SIZE, shuffle=True)
     val_loader = DataLoader(TensorDataset(X_val, y_val), batch_size=BATCH_SIZE)
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cpu")
+        
     model = SentimentLSTM(
         vocab_size=len(vocab),
         embed_dim=EMBED_DIM,
@@ -70,13 +87,13 @@ def train():
         dropout=DROPOUT
     ).to(device)
 
-    criterion = nn.BCELoss()
+    criterion = nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
 
     for epoch in range(EPOCHS):
         model.train()
         total_loss = 0
-        correct = 0
+        total_mae = 0
         total = 0
 
         for X_batch, y_batch in train_loader:
@@ -88,23 +105,23 @@ def train():
             optimizer.step()
 
             total_loss += loss.item() * len(y_batch)
-            correct += ((preds >= 0.5) == y_batch.bool()).sum().item()
+            total_mae += (preds - y_batch).abs().sum().item()
             total += len(y_batch)
 
-        train_acc = correct / total
+        train_mae = total_mae / total
 
         model.eval()
-        val_correct = 0
+        val_mae_sum = 0
         val_total = 0
         with torch.no_grad():
             for X_batch, y_batch in val_loader:
                 X_batch, y_batch = X_batch.to(device), y_batch.to(device)
                 preds = model(X_batch)
-                val_correct += ((preds >= 0.5) == y_batch.bool()).sum().item()
+                val_mae_sum += (preds - y_batch).abs().sum().item()
                 val_total += len(y_batch)
 
-        val_acc = val_correct / val_total
-        print(f"Epoch {epoch+1}/{EPOCHS} — Loss: {total_loss/total:.4f} — Train Acc: {train_acc:.4f} — Val Acc: {val_acc:.4f}")
+        val_mae = val_mae_sum / val_total
+        print(f"Epoch {epoch+1}/{EPOCHS} — Loss: {total_loss/total:.4f} — Train MAE: {train_mae:.4f} — Val MAE: {val_mae:.4f}")
 
     os.makedirs(SAVE_DIR, exist_ok=True)
     torch.save(model.state_dict(), os.path.join(SAVE_DIR, "model.pt"))
