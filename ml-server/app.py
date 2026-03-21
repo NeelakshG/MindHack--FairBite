@@ -12,19 +12,25 @@ app = FastAPI(title="fairBite ML Server")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
+    allow_origins=[""],
+    allow_methods=[""],
     allow_headers=["*"],
 )
 
-SAVE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "model", "saved")
+SAVE_DIR = os.path.join(os.path.dirname(os.path.abspath(file)), "model", "saved")
 MAX_LEN = 200
 
 cleaner = TextCleaner()
 vocab = Vocabulary()
 vocab.load(os.path.join(SAVE_DIR, "vocab.json"))
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if torch.cuda.is_available():
+    device = torch.device("cuda")
+elif torch.backends.mps.is_available():
+    device = torch.device("mps")
+else:
+    device = torch.device("cpu")
+
 model = SentimentLSTM(vocab_size=len(vocab))
 model.load_state_dict(torch.load(os.path.join(SAVE_DIR, "model.pt"), map_location=device))
 model.to(device)
@@ -45,6 +51,7 @@ def score_review(req: ReviewRequest):
     encoded = encode_and_pad([cleaned], vocab, MAX_LEN).to(device)
     with torch.no_grad():
         score = model(encoded).item()
+        score = max(0.0, min(1.0, score))
     return SentimentResponse(sentiment=round(score, 4))
 
 
