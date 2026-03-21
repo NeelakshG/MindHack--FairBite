@@ -16,21 +16,17 @@ class SentimentLSTM(nn.Module):
             bidirectional=True
         )
         self.dropout = nn.Dropout(dropout)
-        # bidirectional doubles the hidden dim
         self.fc = nn.Linear(hidden_dim * 2, 1)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        # x: (batch, seq_len) of token indices
-        embedded = self.embedding(x)                    # (batch, seq_len, embed_dim)
-        lstm_out, (hidden, _) = self.lstm(embedded)     # lstm_out: (batch, seq_len, hidden*2)
+        embedded = self.embedding(x)                    
+        lstm_out, (hidden, _) = self.lstm(embedded)    
 
-        # concatenate final forward and backward hidden states
-        # hidden shape: (num_layers*2, batch, hidden_dim)
-        forward_hidden = hidden[-2]   # last forward layer
-        backward_hidden = hidden[-1]  # last backward layer
-        combined = torch.cat((forward_hidden, backward_hidden), dim=1)  # (batch, hidden*2)
+        forward_hidden = hidden[-2]   
+        backward_hidden = hidden[-1]  
+        combined = torch.cat((forward_hidden, backward_hidden), dim=1)  
 
         out = self.dropout(combined)
-        out = self.fc(out)              # (batch, 1)
-        out = torch.sigmoid(out)        # sentiment score between 0 and 1
-        return out.squeeze(1)           # (batch,)
+        out = self.fc(out)              
+        out = torch.sigmoid(out)        
+        return out.squeeze(1)           
