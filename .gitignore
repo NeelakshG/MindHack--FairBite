@@ -1,0 +1,54 @@
+# Raw data (root-level only)
+/data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch / ML model artifacts
+ml-server/model/saved/*.pt
+ml-server/model/saved/*.bin
+
+# Node / React
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+
+# Logs
+*.log
+
+# FastAPI
+*.pid
