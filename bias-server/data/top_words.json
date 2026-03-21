@@ -1,0 +1,62 @@
+{
+  "Italian": [
+    "pizza",
+    "great",
+    "good",
+    "got",
+    "food",
+    "ordered",
+    "half",
+    "dirty",
+    "greek",
+    "sauce"
+  ],
+  "Japanese": [
+    "sushi",
+    "great",
+    "rolls",
+    "good",
+    "really",
+    "service",
+    "ve",
+    "place",
+    "nice",
+    "time"
+  ],
+  "Chinese": [
+    "food",
+    "chicken",
+    "eat",
+    "rice",
+    "dan",
+    "just",
+    "good",
+    "chinese",
+    "time",
+    "meat"
+  ],
+  "Mexican": [
+    "great",
+    "place",
+    "food",
+    "good",
+    "drinks",
+    "service",
+    "mexican",
+    "wait",
+    "quesadilla",
+    "waitress"
+  ],
+  "French": [
+    "cake",
+    "don",
+    "place",
+    "just",
+    "sandwiches",
+    "shop",
+    "great",
+    "ordered",
+    "slice",
+    "worth"
+  ]
+}

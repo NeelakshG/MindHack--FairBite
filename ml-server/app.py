@@ -17,7 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-SAVE_DIR = os.path.join(os.path.dirname(os.path.abspath(file)), "model", "saved")
+SAVE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "model", "saved")
 MAX_LEN = 200
 
 cleaner = TextCleaner()

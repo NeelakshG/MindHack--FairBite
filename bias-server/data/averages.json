@@ -1,0 +1,985 @@
+{
+  "Philadelphia": {
+    "city_avg_sentiment": 0.6639,
+    "cuisines": {
+      "Italian": {
+        "avg_sentiment": 0.6998,
+        "bias_score": 0.036,
+        "num_reviews": 104,
+        "businesses": {
+          "0zf4KKZqbqoxiuKzeZLDdg": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.02,
+            "avg_sentiment": 0.6278,
+            "review_count": 2
+          },
+          "1NCUTTp6rIyXpwUDVv9qOA": {
+            "original_rating": 4.12,
+            "adjusted_rating": 4.14,
+            "avg_sentiment": 0.6539,
+            "review_count": 8
+          },
+          "3lBooCffgkW7tVSG5kILBA": {
+            "original_rating": 3.43,
+            "adjusted_rating": 3.45,
+            "avg_sentiment": 0.5695,
+            "review_count": 7
+          },
+          "BWITd9JUXP3gSi1z3Y-z8g": {
+            "original_rating": 4.75,
+            "adjusted_rating": 4.77,
+            "avg_sentiment": 0.876,
+            "review_count": 8
+          },
+          "CinrOH8rMB2hEvPY_iFOHA": {
+            "original_rating": 2.33,
+            "adjusted_rating": 2.35,
+            "avg_sentiment": 0.296,
+            "review_count": 3
+          },
+          "DRr5xdfHtqgWfhmdTU1B8Q": {
+            "original_rating": 3.67,
+            "adjusted_rating": 3.68,
+            "avg_sentiment": 0.6813,
+            "review_count": 6
+          },
+          "DXYhpEv17mWqSqFjau7vhg": {
+            "original_rating": 4.2,
+            "adjusted_rating": 4.22,
+            "avg_sentiment": 0.7539,
+            "review_count": 5
+          },
+          "E-DcL1u330qwvoxXhipmUQ": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.02,
+            "avg_sentiment": 0.0194,
+            "review_count": 1
+          },
+          "E1gf1YIWOo1BgzMUwJtEZg": {
+            "original_rating": 4.25,
+            "adjusted_rating": 4.27,
+            "avg_sentiment": 0.7973,
+            "review_count": 4
+          },
+          "L2pmVQMrpY-yZwZkZoRt5g": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.02,
+            "avg_sentiment": 0.051,
+            "review_count": 2
+          },
+          "LfrCUDzg66jncxLvNxBnlg": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.92,
+            "review_count": 2
+          },
+          "OHplb2m_dKPXY46mS0CqJQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.02,
+            "avg_sentiment": 0.7452,
+            "review_count": 3
+          },
+          "PdMXmOWDRHICAx6SLgu1dQ": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.02,
+            "avg_sentiment": 0.5117,
+            "review_count": 2
+          },
+          "QdN72BWoyFypdGJhhI5r7g": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9815,
+            "review_count": 1
+          },
+          "REns5fQe45Nk_D2UwQyr0w": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9829,
+            "review_count": 1
+          },
+          "RZtGWDLCAtuipwaZ-UfjmQ": {
+            "original_rating": 4.5,
+            "adjusted_rating": 4.52,
+            "avg_sentiment": 0.7296,
+            "review_count": 2
+          },
+          "Su_KoRa64akK19myzyK3xA": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.7495,
+            "review_count": 1
+          },
+          "T8lxi3V2avTVXCanVkAFNg": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.02,
+            "avg_sentiment": 0.0177,
+            "review_count": 1
+          },
+          "TttFjRQ-8Iz8by4hsD7iOQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9721,
+            "review_count": 1
+          },
+          "UaovDcnP0QzsmGf6vXvg9w": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.02,
+            "avg_sentiment": 0.4858,
+            "review_count": 1
+          },
+          "bSWL0YxfawjS03_g2kgujA": {
+            "original_rating": 2.67,
+            "adjusted_rating": 2.68,
+            "avg_sentiment": 0.5641,
+            "review_count": 3
+          },
+          "j99PtxlKTW_u5alE4jiqHQ": {
+            "original_rating": 4.38,
+            "adjusted_rating": 4.4,
+            "avg_sentiment": 0.8399,
+            "review_count": 13
+          },
+          "pHBwvBG3iZdOfpLNZTkVWQ": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.02,
+            "avg_sentiment": 0.0595,
+            "review_count": 1
+          },
+          "qot32tHVWZpiJibLTwQGyw": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.02,
+            "avg_sentiment": 0.7633,
+            "review_count": 2
+          },
+          "rVfe1LHo55A2fworkm_jVw": {
+            "original_rating": 4.67,
+            "adjusted_rating": 4.68,
+            "avg_sentiment": 0.8427,
+            "review_count": 3
+          },
+          "t5RIuLUvE5fxr0TaRWxeQg": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9723,
+            "review_count": 1
+          },
+          "u-8sFq05DQ6PYCR5HiKZ2w": {
+            "original_rating": 4.33,
+            "adjusted_rating": 4.35,
+            "avg_sentiment": 0.6479,
+            "review_count": 3
+          },
+          "u7_3L1NBWgxhBM_B-cmmnA": {
+            "original_rating": 3.67,
+            "adjusted_rating": 3.68,
+            "avg_sentiment": 0.6976,
+            "review_count": 9
+          },
+          "uKAbrDSJJzZliY1Yqu5KxQ": {
+            "original_rating": 4.5,
+            "adjusted_rating": 4.52,
+            "avg_sentiment": 0.8504,
+            "review_count": 2
+          },
+          "v7ibuvyZutqZ7pjMCH1exg": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.02,
+            "avg_sentiment": 0.3033,
+            "review_count": 1
+          },
+          "vcyyzUqEiCTSrFmHgqvxpg": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9594,
+            "review_count": 1
+          },
+          "wUnLSg_GKfEIQ5CQQ770_g": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.8825,
+            "review_count": 3
+          },
+          "x1CpCXik31TwTtMPMcrcug": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9676,
+            "review_count": 1
+          }
+        }
+      },
+      "Japanese": {
+        "avg_sentiment": 0.6392,
+        "bias_score": -0.0246,
+        "num_reviews": 70,
+        "businesses": {
+          "0JoB3ThhI-DS78-1Ks1EUQ": {
+            "original_rating": 3.0,
+            "adjusted_rating": 2.99,
+            "avg_sentiment": 0.2614,
+            "review_count": 1
+          },
+          "0a8t_Th0jtWUMmtq0q2dqA": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.7763,
+            "review_count": 1
+          },
+          "8LonS_bxNmCDk3FWiG9lzA": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.9265,
+            "review_count": 2
+          },
+          "Bw0cpnfI-Y9QmjWzqS-oFg": {
+            "original_rating": 3.67,
+            "adjusted_rating": 3.65,
+            "avg_sentiment": 0.6289,
+            "review_count": 3
+          },
+          "FHNIvNgh3fS7VZQq2Y3dsA": {
+            "original_rating": 4.19,
+            "adjusted_rating": 4.18,
+            "avg_sentiment": 0.7589,
+            "review_count": 21
+          },
+          "GUMVStVaJfWmCIpQA4TtHg": {
+            "original_rating": 3.2,
+            "adjusted_rating": 3.19,
+            "avg_sentiment": 0.4628,
+            "review_count": 15
+          },
+          "L3V21nAe-CicW2bvtNWa0g": {
+            "original_rating": 2.33,
+            "adjusted_rating": 2.32,
+            "avg_sentiment": 0.3999,
+            "review_count": 3
+          },
+          "L_sXNadtVHjxMw7Yhvkj9Q": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.8954,
+            "review_count": 2
+          },
+          "MUTTqe8uqyMdBl186RmNeA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.99,
+            "avg_sentiment": 0.6834,
+            "review_count": 4
+          },
+          "P8QLcGZZOPgl9w_3ARBKiQ": {
+            "original_rating": 2.0,
+            "adjusted_rating": 1.99,
+            "avg_sentiment": 0.4901,
+            "review_count": 1
+          },
+          "WIv5kTb_P3jnngPkMeRRNw": {
+            "original_rating": 3.5,
+            "adjusted_rating": 3.49,
+            "avg_sentiment": 0.6079,
+            "review_count": 4
+          },
+          "WYYdQDjx-DsCanlP0DpImQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.9666,
+            "review_count": 2
+          },
+          "YAUUdbESr8BYQ_TFgDjT5Q": {
+            "original_rating": 4.33,
+            "adjusted_rating": 4.32,
+            "avg_sentiment": 0.8001,
+            "review_count": 3
+          },
+          "dSPA4yql9vUwnYRxHiVtHA": {
+            "original_rating": 3.0,
+            "adjusted_rating": 2.99,
+            "avg_sentiment": 0.5636,
+            "review_count": 3
+          },
+          "kimOwpoIWzJJx7NHTAj74Q": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.0,
+            "avg_sentiment": 0.0724,
+            "review_count": 1
+          },
+          "tCLAeZsjXFG9RumJ4Hn0Kw": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.99,
+            "avg_sentiment": 0.6236,
+            "review_count": 3
+          },
+          "ydY1FKBgpgXvhxpVPMbinA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.99,
+            "avg_sentiment": 0.4776,
+            "review_count": 1
+          }
+        }
+      },
+      "Chinese": {
+        "avg_sentiment": 0.6648,
+        "bias_score": 0.0009,
+        "num_reviews": 64,
+        "businesses": {
+          "0zWAsCBzvuCI_Ydx7yH1Jw": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.8036,
+            "review_count": 1
+          },
+          "3BJxm-HnvzdwD1zjmSbmyQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.4752,
+            "review_count": 3
+          },
+          "6g3pHoyXeMXFC7WD0rbJMA": {
+            "original_rating": 2.0,
+            "adjusted_rating": 2.0,
+            "avg_sentiment": 0.5067,
+            "review_count": 1
+          },
+          "7e4Z9_qGA0Vjb8xlFC61PA": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9175,
+            "review_count": 1
+          },
+          "D4DZztR7vkbiED6txGUYFg": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.8361,
+            "review_count": 1
+          },
+          "Fc_8eLlcq5yy4DzrEeqEaQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.6698,
+            "review_count": 3
+          },
+          "I9DCtzUgR4gamBFMVsdY8g": {
+            "original_rating": 3.67,
+            "adjusted_rating": 3.67,
+            "avg_sentiment": 0.7019,
+            "review_count": 3
+          },
+          "IAyHcNx5IHoLf3V4dlgFCw": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.0,
+            "avg_sentiment": 0.5,
+            "review_count": 2
+          },
+          "KgozvZ1UFfXuJToqe8CfQg": {
+            "original_rating": 2.5,
+            "adjusted_rating": 2.5,
+            "avg_sentiment": 0.3699,
+            "review_count": 2
+          },
+          "MMRRS6YhVRx_iN5-JhMRYg": {
+            "original_rating": 4.06,
+            "adjusted_rating": 4.06,
+            "avg_sentiment": 0.6841,
+            "review_count": 18
+          },
+          "MN-Em6pY0ZXZQsLv6uBhrA": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.0,
+            "avg_sentiment": 0.0248,
+            "review_count": 1
+          },
+          "VRnJgj0IvxoksHppE78X2Q": {
+            "original_rating": 3.5,
+            "adjusted_rating": 3.5,
+            "avg_sentiment": 0.5572,
+            "review_count": 6
+          },
+          "aZNiVR6oAMQX5__yGPvYsg": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.7522,
+            "review_count": 3
+          },
+          "eaDZlSuVS0EY67Ke6pRP6Q": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.7097,
+            "review_count": 9
+          },
+          "mCo2uVTTGYrEhRrkQW-CMw": {
+            "original_rating": 4.44,
+            "adjusted_rating": 4.44,
+            "avg_sentiment": 0.7852,
+            "review_count": 9
+          },
+          "piUZEndStsWNnRUwOPk8jA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.0,
+            "avg_sentiment": 0.8106,
+            "review_count": 1
+          }
+        }
+      },
+      "Mexican": {
+        "avg_sentiment": 0.6428,
+        "bias_score": -0.021,
+        "num_reviews": 60,
+        "businesses": {
+          "1UNorskttXSWuEcgzKzXcA": {
+            "original_rating": 3.88,
+            "adjusted_rating": 3.86,
+            "avg_sentiment": 0.7198,
+            "review_count": 8
+          },
+          "B-DiQpcSTJ7oMMnwzbAGTQ": {
+            "original_rating": 4.71,
+            "adjusted_rating": 4.7,
+            "avg_sentiment": 0.8713,
+            "review_count": 7
+          },
+          "BJphaOPeTtqUFF5pauQEhw": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.6652,
+            "review_count": 1
+          },
+          "I5KZm-NnxYeEQsmp6nK5_w": {
+            "original_rating": 3.9,
+            "adjusted_rating": 3.89,
+            "avg_sentiment": 0.6782,
+            "review_count": 10
+          },
+          "JUlsvVAvZvGHWFfkKm0nlg": {
+            "original_rating": 3.17,
+            "adjusted_rating": 3.16,
+            "avg_sentiment": 0.5005,
+            "review_count": 18
+          },
+          "MF5-JPr0auUkY_WLTTVUaA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.99,
+            "avg_sentiment": 0.5621,
+            "review_count": 1
+          },
+          "MbKhuO-4uYPc0NRZDRWoew": {
+            "original_rating": 3.33,
+            "adjusted_rating": 3.32,
+            "avg_sentiment": 0.5394,
+            "review_count": 3
+          },
+          "Ryt1Fhgz7sixMQSJiLyP_g": {
+            "original_rating": 2.0,
+            "adjusted_rating": 1.99,
+            "avg_sentiment": 0.2337,
+            "review_count": 1
+          },
+          "Xkn6vebYLTY1aCe2J07MfA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.99,
+            "avg_sentiment": 0.596,
+            "review_count": 1
+          },
+          "afsP-p_pr4ikrboB5MtUzQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.6253,
+            "review_count": 1
+          },
+          "hUX1yAimviBIhb21D_KtcQ": {
+            "original_rating": 3.0,
+            "adjusted_rating": 2.99,
+            "avg_sentiment": 0.3286,
+            "review_count": 2
+          },
+          "jULIPydhMj18KOI5OHTwfA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.99,
+            "avg_sentiment": 0.8355,
+            "review_count": 4
+          },
+          "mbglgx3nbRRPKxh0SxDjNQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.9276,
+            "review_count": 1
+          },
+          "tQYOAfl33tmP4oWpfyRr6g": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.7393,
+            "review_count": 1
+          },
+          "ugSVRAKO6mxvsrElFg8USw": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.99,
+            "avg_sentiment": 0.956,
+            "review_count": 1
+          }
+        }
+      },
+      "French": {
+        "avg_sentiment": 0.2566,
+        "bias_score": -0.4072,
+        "num_reviews": 2,
+        "businesses": {
+          "5iuo1kvv0XZMS0bUOoLz2Q": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.8,
+            "avg_sentiment": 0.4446,
+            "review_count": 1
+          },
+          "PW6C4OMpPQ_Zm7oiwNIVgw": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.0,
+            "avg_sentiment": 0.0687,
+            "review_count": 1
+          }
+        }
+      }
+    }
+  },
+  "Tampa": {
+    "city_avg_sentiment": 0.6074,
+    "cuisines": {
+      "Italian": {
+        "avg_sentiment": 0.5441,
+        "bias_score": -0.0633,
+        "num_reviews": 44,
+        "businesses": {
+          "1IjHo5kaSdFxJkJotU4O7A": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.97,
+            "avg_sentiment": 0.9572,
+            "review_count": 1
+          },
+          "5cz1XbgalpQ89gsNQwneVQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.97,
+            "avg_sentiment": 0.9767,
+            "review_count": 1
+          },
+          "Uc6PdjT_MO5bRPQsUUEy5Q": {
+            "original_rating": 3.57,
+            "adjusted_rating": 3.54,
+            "avg_sentiment": 0.7173,
+            "review_count": 7
+          },
+          "WQ832PDnsDshhbQFm83ISg": {
+            "original_rating": 2.5,
+            "adjusted_rating": 2.47,
+            "avg_sentiment": 0.3056,
+            "review_count": 6
+          },
+          "cg4JFJcCxRTTMmcg9O9KtA": {
+            "original_rating": 2.62,
+            "adjusted_rating": 2.59,
+            "avg_sentiment": 0.4154,
+            "review_count": 8
+          },
+          "gT69S0R0gpmxwjCLznwT4A": {
+            "original_rating": 4.5,
+            "adjusted_rating": 4.47,
+            "avg_sentiment": 0.8719,
+            "review_count": 2
+          },
+          "k37i1EW_x848o_n1ATcErg": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.0,
+            "avg_sentiment": 0.0195,
+            "review_count": 1
+          },
+          "lXCFcmhoRsyW-mnzzl6fkA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.97,
+            "avg_sentiment": 0.9325,
+            "review_count": 1
+          },
+          "mLNSOU8Ki0Fm09xd6ZKkcA": {
+            "original_rating": 3.22,
+            "adjusted_rating": 3.19,
+            "avg_sentiment": 0.5614,
+            "review_count": 9
+          },
+          "o6jfwLREaGy1mwAEybjOkg": {
+            "original_rating": 3.67,
+            "adjusted_rating": 3.64,
+            "avg_sentiment": 0.4229,
+            "review_count": 3
+          },
+          "oJRjeio1OBablDFr--__Xg": {
+            "original_rating": 3.75,
+            "adjusted_rating": 3.72,
+            "avg_sentiment": 0.698,
+            "review_count": 4
+          },
+          "ttevmSPHu3dHUHFXBpVX9A": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.0,
+            "avg_sentiment": 0.0203,
+            "review_count": 1
+          }
+        }
+      },
+      "Japanese": {
+        "avg_sentiment": 0.6181,
+        "bias_score": 0.0107,
+        "num_reviews": 25,
+        "businesses": {
+          "71U7MxQEhwitJOm4CQpRwQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.7298,
+            "review_count": 4
+          },
+          "OIES_WhdNux3PmvSuPM-8Q": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.01,
+            "avg_sentiment": 0.494,
+            "review_count": 2
+          },
+          "WO5nr-4sjVs506BdCLL0aA": {
+            "original_rating": 4.25,
+            "adjusted_rating": 4.26,
+            "avg_sentiment": 0.7892,
+            "review_count": 8
+          },
+          "d9vapPUlJCSSrltRRKO9ig": {
+            "original_rating": 4.33,
+            "adjusted_rating": 4.34,
+            "avg_sentiment": 0.7015,
+            "review_count": 3
+          },
+          "dJfkfBbJz7wi0RgW-ph_Eg": {
+            "original_rating": 1.67,
+            "adjusted_rating": 1.67,
+            "avg_sentiment": 0.1317,
+            "review_count": 3
+          },
+          "e9J0IWHyYGU-AcCqTQ7lSA": {
+            "original_rating": 4.5,
+            "adjusted_rating": 4.51,
+            "avg_sentiment": 0.6583,
+            "review_count": 2
+          },
+          "mMPvgBgqON8pia_4AgGTUw": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.8266,
+            "review_count": 1
+          },
+          "v8IbZ6wcvdyGqWpbDKDvfA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.5234,
+            "review_count": 1
+          },
+          "zTGzoge9b_U1m7lExiHqgw": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.01,
+            "avg_sentiment": 0.0653,
+            "review_count": 1
+          }
+        }
+      },
+      "Mexican": {
+        "avg_sentiment": 0.6602,
+        "bias_score": 0.0528,
+        "num_reviews": 33,
+        "businesses": {
+          "3yI-7C8JzbG-ZaSqAGHMAQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.03,
+            "avg_sentiment": 0.91,
+            "review_count": 4
+          },
+          "FSTmzo0beEVMRMSArcp4fg": {
+            "original_rating": 2.75,
+            "adjusted_rating": 2.78,
+            "avg_sentiment": 0.3884,
+            "review_count": 4
+          },
+          "H2nFgEFitRk7ltE8IRH0xA": {
+            "original_rating": 2.5,
+            "adjusted_rating": 2.53,
+            "avg_sentiment": 0.3878,
+            "review_count": 2
+          },
+          "KP5OncF2jhT7_J1phHPPww": {
+            "original_rating": 3.75,
+            "adjusted_rating": 3.78,
+            "avg_sentiment": 0.6037,
+            "review_count": 12
+          },
+          "LkskzKzo_S8YmG1dGn4hag": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.03,
+            "avg_sentiment": 0.9133,
+            "review_count": 1
+          },
+          "WWnRdTjwaTnsLSJX95j-Zw": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.8817,
+            "review_count": 2
+          },
+          "fXsdsGnTntaRWbfUxP3wXw": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.03,
+            "avg_sentiment": 0.3745,
+            "review_count": 1
+          },
+          "sgKIKeFXSUHLeOcX1q8nQg": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.2486,
+            "review_count": 1
+          },
+          "xGUAa3xa8KsmbolC3XboQg": {
+            "original_rating": 4.5,
+            "adjusted_rating": 4.53,
+            "avg_sentiment": 0.8957,
+            "review_count": 2
+          },
+          "xkTjLbBC7uB-rAIDqAm-sw": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.8701,
+            "review_count": 4
+          }
+        }
+      },
+      "Chinese": {
+        "avg_sentiment": 0.7182,
+        "bias_score": 0.1108,
+        "num_reviews": 7,
+        "businesses": {
+          "EjFp57Nd4bVgb5GNn-XnuA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.06,
+            "avg_sentiment": 0.8217,
+            "review_count": 3
+          },
+          "RnqU698MbIjq_eZHEzYL6g": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.06,
+            "avg_sentiment": 0.398,
+            "review_count": 2
+          },
+          "ovLgaPIMrx7PDZPrEpTMvg": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.8831,
+            "review_count": 2
+          }
+        }
+      }
+    }
+  },
+  "Indianapolis": {
+    "city_avg_sentiment": 0.6875,
+    "cuisines": {
+      "Mexican": {
+        "avg_sentiment": 0.7043,
+        "bias_score": 0.0168,
+        "num_reviews": 61,
+        "businesses": {
+          "5FDt7sy-70y4_37Dh2qcbw": {
+            "original_rating": 2.5,
+            "adjusted_rating": 2.51,
+            "avg_sentiment": 0.3086,
+            "review_count": 2
+          },
+          "7pxE4BFDibv6Q7MBbNOPQA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.4883,
+            "review_count": 1
+          },
+          "9V0LMtO1riRw9-pUuG4NFg": {
+            "original_rating": 4.23,
+            "adjusted_rating": 4.24,
+            "avg_sentiment": 0.7637,
+            "review_count": 13
+          },
+          "9dm_v79s9-pefMahqp1SkA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.6813,
+            "review_count": 1
+          },
+          "AmnnsJq4Pz1jJUFzHwtsOA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.4597,
+            "review_count": 1
+          },
+          "E-4t5Hoon6aVFTWDPz26fQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.7385,
+            "review_count": 8
+          },
+          "F2C5ENuY8CXfgoW-gAMdDA": {
+            "original_rating": 4.29,
+            "adjusted_rating": 4.29,
+            "avg_sentiment": 0.6567,
+            "review_count": 7
+          },
+          "FZCj995CEL2G-JTiLC3Azw": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.01,
+            "avg_sentiment": 0.4468,
+            "review_count": 1
+          },
+          "Gf1EboxqdJ9SPsVJur93Cw": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.01,
+            "avg_sentiment": 0.041,
+            "review_count": 1
+          },
+          "K_WZrMHAjqZ5DThAw4ZKMQ": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.01,
+            "avg_sentiment": 0.2744,
+            "review_count": 1
+          },
+          "MKy5T5exCdH4IUVlYPtWkw": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.01,
+            "avg_sentiment": 0.7699,
+            "review_count": 1
+          },
+          "SlZJATE_TGUU8X34UJNi4g": {
+            "original_rating": 4.6,
+            "adjusted_rating": 4.61,
+            "avg_sentiment": 0.8132,
+            "review_count": 5
+          },
+          "ju1qrGJ1mcc1sc2oRX7X5g": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.832,
+            "review_count": 1
+          },
+          "kSQNBSWTLlo-SwR6IcpvHA": {
+            "original_rating": 4.5,
+            "adjusted_rating": 4.51,
+            "avg_sentiment": 0.8461,
+            "review_count": 2
+          },
+          "rVhsjZWk_u20TDcvwhbdyQ": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.7459,
+            "review_count": 4
+          },
+          "yS0TsUzKBQlHQCZZeBrxww": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9265,
+            "review_count": 2
+          },
+          "yeHLiKNp0hyR-ig4M6us-w": {
+            "original_rating": 4.0,
+            "adjusted_rating": 4.01,
+            "avg_sentiment": 0.7324,
+            "review_count": 10
+          }
+        }
+      },
+      "Italian": {
+        "avg_sentiment": 0.5798,
+        "bias_score": -0.1077,
+        "num_reviews": 11,
+        "businesses": {
+          "0cB1kDuZCvSwpJrNdtQP8Q": {
+            "original_rating": 3.33,
+            "adjusted_rating": 3.28,
+            "avg_sentiment": 0.4489,
+            "review_count": 3
+          },
+          "2DsplH_vy4GCcEnVpn0AbA": {
+            "original_rating": 4.0,
+            "adjusted_rating": 3.95,
+            "avg_sentiment": 0.768,
+            "review_count": 1
+          },
+          "2kWw4GEEZdSPuTc6KV_aRA": {
+            "original_rating": 2.0,
+            "adjusted_rating": 1.95,
+            "avg_sentiment": 0.2358,
+            "review_count": 1
+          },
+          "72Y65Cg8MO1t9cWCHpwEQQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.95,
+            "avg_sentiment": 0.9546,
+            "review_count": 2
+          },
+          "8bkSuPXdYW58QsUEOG77HQ": {
+            "original_rating": 5.0,
+            "adjusted_rating": 4.95,
+            "avg_sentiment": 0.976,
+            "review_count": 1
+          },
+          "Dpvyaemt0E9u9HwByONbkg": {
+            "original_rating": 3.5,
+            "adjusted_rating": 3.45,
+            "avg_sentiment": 0.5605,
+            "review_count": 2
+          },
+          "lH3a8SaR1NCKk8KbwJpyAw": {
+            "original_rating": 1.0,
+            "adjusted_rating": 1.0,
+            "avg_sentiment": 0.0213,
+            "review_count": 1
+          }
+        }
+      },
+      "Japanese": {
+        "avg_sentiment": 0.7214,
+        "bias_score": 0.034,
+        "num_reviews": 7,
+        "businesses": {
+          "Dtuf4vD0znzwJW9vk3iTNw": {
+            "original_rating": 4.8,
+            "adjusted_rating": 4.82,
+            "avg_sentiment": 0.8218,
+            "review_count": 5
+          },
+          "mg7c4-H5oU3fE-jDSUlfNw": {
+            "original_rating": 3.0,
+            "adjusted_rating": 3.02,
+            "avg_sentiment": 0.4706,
+            "review_count": 2
+          }
+        }
+      },
+      "French": {
+        "avg_sentiment": 0.6539,
+        "bias_score": -0.0335,
+        "num_reviews": 11,
+        "businesses": {
+          "sr-5EY6bmp4jINhea06MjA": {
+            "original_rating": 3.82,
+            "adjusted_rating": 3.8,
+            "avg_sentiment": 0.6539,
+            "review_count": 11
+          }
+        }
+      },
+      "Chinese": {
+        "avg_sentiment": 0.9778,
+        "bias_score": 0.2903,
+        "num_reviews": 1,
+        "businesses": {
+          "0z1VO3Js0NdTOKLYDa15zw": {
+            "original_rating": 5.0,
+            "adjusted_rating": 5.0,
+            "avg_sentiment": 0.9778,
+            "review_count": 1
+          }
+        }
+      }
+    }
+  }
+}
