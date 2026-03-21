@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import os
 
-CITIES = ["Las Vegas", "Phoenix", "Toronto"]
+CITIES = ["Philadelphia", "Tampa", "Indianapolis"]
 CUISINES = ["Mexican", "French", "Chinese", "Italian", "Japanese"]
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -16,9 +16,12 @@ class YelpDataLoader:
 
     def load_businesses(self) -> pd.DataFrame:
         records = []
-        with open(self.business_path) as f:
+        with open(self.business_path, encoding="latin-1") as f:
             for line in f:
-                b = json.loads(line)
+                try:
+                    b = json.loads(line, strict=False)
+                except json.JSONDecodeError:
+                    continue
                 if not b.get("categories"):
                     continue
                 if "Restaurants" not in b["categories"]:
@@ -40,9 +43,12 @@ class YelpDataLoader:
 
     def load_reviews(self, business_ids: set) -> pd.DataFrame:
         records = []
-        with open(self.review_path) as f:
+        with open(self.review_path, encoding="latin-1") as f:
             for line in f:
-                r = json.loads(line)
+                try:
+                    r = json.loads(line, strict=False)
+                except json.JSONDecodeError:
+                    continue
                 if r["business_id"] not in business_ids:
                     continue
                 records.append({
