@@ -1,7 +1,13 @@
 import re
+import nltk
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+nltk.download('wordnet')
 
 class TextCleaner:
     def __init__(self):
