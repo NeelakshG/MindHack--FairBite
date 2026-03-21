@@ -1,5 +1,6 @@
 "use client";
 
+import { type FormEvent } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 interface SearchBarProps {
@@ -10,7 +11,7 @@ interface SearchBarProps {
 }
 
 export function SearchBar({ cities, cuisines, loading, onAnalyze }: SearchBarProps) {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const city = data.get('city') as string;

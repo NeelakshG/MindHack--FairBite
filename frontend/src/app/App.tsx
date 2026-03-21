@@ -61,10 +61,13 @@ export default function App() {
         cuisineSentiment: result.bias.cuisine_avg_sentiment,
         cityAverage: result.bias.city_avg_sentiment,
         cuisineWords: result.bias.top_words,
-        otherWords: Object.entries(allTopWords)
-          .filter(([k]) => k !== result.bias.cuisine)
-          .flatMap(([, words]) => words.slice(0, 2))
-          .slice(0, 6),
+        otherWords: [
+          ...new Set(
+            Object.entries(allTopWords)
+              .filter(([k]) => k !== result.bias.cuisine)
+              .flatMap(([, words]) => words.slice(0, 2))
+          ),
+        ].slice(0, 6),
         insight: result.bias.explanation,
       }
     : null;

@@ -52,7 +52,6 @@ def main():
 
     # Merge to get cuisine and city per review
     reviews = reviews.merge(businesses[["business_id", "cuisine", "city"]], on="business_id")
-    reviews= reviews[:500]
 
     # Score each review via ml-server
     print(f"Scoring {len(reviews)} reviews via ml-server...")

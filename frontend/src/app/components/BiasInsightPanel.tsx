@@ -84,9 +84,9 @@ export function BiasInsightPanel({
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-xs font-medium text-[#6B7280] mb-3">Your Cuisine</p>
             <div className="flex flex-wrap gap-2">
-              {cuisineWords.map((word) => (
+              {cuisineWords.map((word, i) => (
                 <span
-                  key={word}
+                  key={`cuisine-${word}-${i}`}
                   className="text-xs text-[#92400E] bg-[#FEF3C7] border border-[#FDE68A] px-2.5 py-1 rounded-full"
                 >
                   {word}
@@ -98,9 +98,9 @@ export function BiasInsightPanel({
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-xs font-medium text-[#6B7280] mb-3">Other Cuisines</p>
             <div className="flex flex-wrap gap-2">
-              {otherWords.map((word) => (
+              {otherWords.map((word, i) => (
                 <span
-                  key={word}
+                  key={`other-${word}-${i}`}
                   className="text-xs text-[#1D4ED8] bg-[#DBEAFE] border border-[#BFDBFE] px-2.5 py-1 rounded-full"
                 >
                   {word}
