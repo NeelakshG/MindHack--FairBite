@@ -42,10 +42,12 @@ ml-server/model/saved/*.bin
 
 # Node / React
 frontend/node_modules/
+frontend/.next/
 frontend/build/
 frontend/dist/
 frontend/.env
 frontend/.env.*
+frontend/next-env.d.ts
 
 # Logs
 *.log
