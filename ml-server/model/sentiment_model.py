@@ -27,6 +27,6 @@ class SentimentLSTM(nn.Module):
         combined = torch.cat((forward_hidden, backward_hidden), dim=1)  
 
         out = self.dropout(combined)
-        out = self.fc(out)              
-        out = torch.sigmoid(out)        
-        return out.squeeze(1)           
+        out = self.fc(out)
+        out = torch.sigmoid(out)
+        return out.squeeze(1)
