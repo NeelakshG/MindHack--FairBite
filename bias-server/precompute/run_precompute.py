@@ -110,6 +110,26 @@ def main():
     print("Computing top TF-IDF words per cuisine...")
     top_words = compute_top_words(reviews)
 
+    print("Sampling illustrative reviews per cuisine per city...")
+    sample_reviews = {}
+    for city in reviews["city"].unique():
+        sample_reviews[city] = {}
+        city_reviews = reviews[reviews["city"] == city]
+        for cuisine in city_reviews["cuisine"].unique():
+            cuisine_reviews = city_reviews[city_reviews["cuisine"] == cuisine].copy()
+            # Sort by gap between normalised stars and sentiment (most divergent first)
+            cuisine_reviews["star_norm"] = (cuisine_reviews["stars"] - 1) / 4
+            cuisine_reviews["gap"] = abs(cuisine_reviews["star_norm"] - cuisine_reviews["sentiment"])
+            top = cuisine_reviews.nlargest(5, "gap")
+            sample_reviews[city][cuisine] = [
+                {
+                    "text": row["text"][:400],
+                    "stars": int(row["stars"]),
+                    "sentiment": round(float(row["sentiment"]), 4),
+                }
+                for _, row in top.iterrows()
+            ]
+
     os.makedirs(DATA_DIR, exist_ok=True)
 
     averages_path = os.path.join(DATA_DIR, "averages.json")
@@ -121,6 +141,11 @@ def main():
     with open(top_words_path, "w") as f:
         json.dump(top_words, f, indent=2)
     print(f"Saved top words to {top_words_path}")
+
+    sample_reviews_path = os.path.join(DATA_DIR, "sample_reviews.json")
+    with open(sample_reviews_path, "w") as f:
+        json.dump(sample_reviews, f, indent=2)
+    print(f"Saved sample reviews to {sample_reviews_path}")
 
     print("\n=== Summary ===")
     for city, data in averages.items():

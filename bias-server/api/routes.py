@@ -6,8 +6,9 @@ from api.schemas import (
     CuisineDetailResponse,
     CityOverviewResponse,
     CityOverviewCuisine,
+    ReviewSample,
 )
-from bias.scoring import load_averages, load_top_words, get_bias_for_cuisine, get_businesses_for_cuisine
+from bias.scoring import load_averages, load_top_words, load_sample_reviews, get_bias_for_cuisine, get_businesses_for_cuisine
 from bias.explanation import explain_bias
 
 router = APIRouter()
@@ -15,6 +16,7 @@ router = APIRouter()
 # Load precomputed data once at import time
 averages = load_averages()
 top_words = load_top_words()
+sample_reviews = load_sample_reviews()
 
 
 @router.get("/cities")
@@ -68,6 +70,14 @@ def cuisine_bias(city: str, cuisine: str):
     businesses = [BusinessResponse(**b) for b in businesses_data]
 
     return CuisineDetailResponse(bias=bias, businesses=businesses)
+
+
+@router.get("/reviews/{city}/{cuisine}", response_model=list[ReviewSample])
+def get_reviews(city: str, cuisine: str):
+    reviews = sample_reviews.get(city, {}).get(cuisine)
+    if not reviews:
+        raise HTTPException(status_code=404, detail=f"No reviews for {cuisine} in {city}")
+    return reviews
 
 
 @router.get("/top_words")

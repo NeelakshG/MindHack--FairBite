@@ -13,6 +13,14 @@ def load_top_words() -> dict:
         return json.load(f)
 
 
+def load_sample_reviews() -> dict:
+    path = os.path.join(DATA_DIR, "sample_reviews.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return json.load(f)
+
+
 def get_bias_for_cuisine(city: str, cuisine: str, averages: dict) -> dict | None:
     city_data = averages.get(city)
     if not city_data:

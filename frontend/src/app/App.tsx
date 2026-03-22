@@ -9,9 +9,12 @@ import {
   fetchCuisines,
   fetchBias,
   fetchTopWords,
+  fetchReviews,
   type CuisineDetail,
+  type ReviewSample,
 } from '@/lib/api';
 import { Nav } from './components/Nav';
+import { ReviewsPanel } from './components/ReviewsPanel';
 
 function avg(nums: number[]) {
   if (!nums.length) return 0;
@@ -23,6 +26,7 @@ export default function App() {
   const [cuisines, setCuisines] = useState<string[]>([]);
   const [allTopWords, setAllTopWords] = useState<Record<string, string[]>>({});
   const [result, setResult] = useState<CuisineDetail | null>(null);
+  const [reviews, setReviews] = useState<ReviewSample[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [serverDown, setServerDown] = useState(false);
@@ -41,8 +45,12 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const data = await fetchBias(city, cuisine);
+      const [data, reviewData] = await Promise.all([
+        fetchBias(city, cuisine),
+        fetchReviews(city, cuisine),
+      ]);
       setResult(data);
+      setReviews(reviewData);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Something went wrong');
     } finally {
@@ -126,6 +134,15 @@ export default function App() {
               insight={displayData.insight}
             />
           </div>
+        )}
+
+        {/* Real Reviews */}
+        {result && reviews.length > 0 && (
+          <ReviewsPanel
+            reviews={reviews}
+            cuisine={result.bias.cuisine}
+            city={result.bias.city}
+          />
         )}
 
         <p className="text-xs text-[#9CA3AF]">

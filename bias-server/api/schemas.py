@@ -36,3 +36,9 @@ class CityOverviewResponse(BaseModel):
     city: str
     city_avg_sentiment: float
     cuisines: list[CityOverviewCuisine]
+
+
+class ReviewSample(BaseModel):
+    text: str
+    stars: int
+    sentiment: float

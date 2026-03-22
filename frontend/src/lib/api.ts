@@ -48,6 +48,23 @@ export async function fetchBias(
   return res.json();
 }
 
+export interface ReviewSample {
+  text: string;
+  stars: number;
+  sentiment: number;
+}
+
+export async function fetchReviews(
+  city: string,
+  cuisine: string
+): Promise<ReviewSample[]> {
+  const res = await fetch(
+    `${BIAS_SERVER}/reviews/${encodeURIComponent(city)}/${encodeURIComponent(cuisine)}`
+  );
+  if (!res.ok) return [];
+  return res.json();
+}
+
 export async function fetchTopWords(): Promise<Record<string, string[]>> {
   const res = await fetch(`${BIAS_SERVER}/top_words`);
   if (!res.ok) throw new Error('Failed to fetch top words');
