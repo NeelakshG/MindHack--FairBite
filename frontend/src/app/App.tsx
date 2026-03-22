@@ -125,6 +125,7 @@ export default function App() {
               numReviews={displayData.numReviews}
               originalRating={displayData.originalRating}
               fairRating={displayData.fairRating}
+              reviews={reviews}
             />
             <BiasInsightPanel
               cuisineSentiment={displayData.cuisineSentiment}
@@ -134,15 +135,6 @@ export default function App() {
               insight={displayData.insight}
             />
           </div>
-        )}
-
-        {/* Real Reviews */}
-        {result && reviews.length > 0 && (
-          <ReviewsPanel
-            reviews={reviews}
-            cuisine={result.bias.cuisine}
-            city={result.bias.city}
-          />
         )}
 
         <p className="text-xs text-[#9CA3AF]">

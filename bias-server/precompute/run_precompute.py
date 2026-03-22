@@ -3,20 +3,22 @@ import sys
 import json
 import requests
 import pandas as pd
+from dotenv import load_dotenv
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 sys.path.append(os.path.join(BASE_DIR, "ml-server"))
 
 from utils.data_loader import YelpDataLoader
 
-ML_SERVER_URL = "   "
+ML_SERVER_URL = os.getenv("ML_SERVER_URL", "http://localhost:8000")
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 TOP_N_WORDS = 10
 
 
 def score_review(text: str) -> float:
-    resp = requests.post(f"{ML_SERVER_URL}/score_review", json={"text": text}, timeout=10)
+    resp = requests.post(f"{ML_SERVER_URL}/score_review", json={"text": text}, timeout=120)
     resp.raise_for_status()
     return resp.json()["sentiment"]
 
@@ -52,6 +54,14 @@ def main():
 
     # Merge to get cuisine and city per review
     reviews = reviews.merge(businesses[["business_id", "cuisine", "city"]], on="business_id")
+
+    # Sample reviews to keep scoring feasible (500 per cuisine per city)
+    MAX_PER_GROUP = 500
+    sampled = reviews.groupby(["city", "cuisine"], group_keys=False).apply(
+        lambda g: g.sample(n=min(len(g), MAX_PER_GROUP), random_state=42)
+    ).reset_index(drop=True)
+    print(f"Sampled {len(sampled)} from {len(reviews)} total reviews ({MAX_PER_GROUP} max per cuisine/city)")
+    reviews = sampled
 
     # Score each review via ml-server
     print(f"Scoring {len(reviews)} reviews via ml-server...")

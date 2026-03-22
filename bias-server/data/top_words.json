@@ -1,15 +1,39 @@
 {
+  "Chinese": [
+    "food",
+    "good",
+    "place",
+    "great",
+    "chinese",
+    "chicken",
+    "service",
+    "like",
+    "time",
+    "restaurant"
+  ],
+  "French": [
+    "food",
+    "great",
+    "place",
+    "good",
+    "service",
+    "cake",
+    "delicious",
+    "like",
+    "just",
+    "amazing"
+  ],
   "Italian": [
     "pizza",
     "food",
-    "good",
     "great",
+    "good",
     "place",
     "service",
+    "restaurant",
+    "italian",
     "just",
-    "time",
-    "like",
-    "delicious"
+    "best"
   ],
   "Japanese": [
     "sushi",
@@ -23,40 +47,16 @@
     "rolls",
     "time"
   ],
-  "Chinese": [
-    "food",
-    "good",
-    "place",
-    "great",
-    "chinese",
-    "chicken",
-    "service",
-    "like",
-    "soup",
-    "just"
-  ],
   "Mexican": [
     "food",
-    "good",
     "tacos",
     "great",
+    "good",
     "place",
     "service",
     "mexican",
-    "just",
     "time",
+    "taco",
     "like"
-  ],
-  "French": [
-    "food",
-    "great",
-    "good",
-    "place",
-    "service",
-    "delicious",
-    "just",
-    "restaurant",
-    "like",
-    "really"
   ]
 }
