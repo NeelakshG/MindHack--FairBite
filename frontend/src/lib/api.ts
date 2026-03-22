@@ -1,5 +1,5 @@
 const BIAS_SERVER =
-  process.env.NEXT_PUBLIC_BIAS_SERVER_URL ?? 'http://localhost:9000';
+  process.env.NEXT_PUBLIC_BIAS_SERVER_URL ?? 'http://localhost:8001';
 
 export interface BiasData {
   city: string;
