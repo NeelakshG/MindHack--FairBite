@@ -10,7 +10,7 @@ sys.path.append(os.path.join(BASE_DIR, "ml-server"))
 
 from utils.data_loader import YelpDataLoader
 
-ML_SERVER_URL = "http://localhost:8000"
+ML_SERVER_URL = "   "
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 TOP_N_WORDS = 10
 
