@@ -37,7 +37,6 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # PyTorch / ML model artifacts
-ml-server/model/saved/*.pt
 ml-server/model/saved/*.bin
 
 # Node / React
